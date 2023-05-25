@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <a href="students/add" class="btn btn-primary">Add Student</a> 
   </head>
   <body>
     <h1>Hello, world!</h1>
@@ -36,7 +36,7 @@
                             <td><?= $student['section']; ?></td>
                             <td>
                                 <a href="/students/edit/<?= $student['id']; ?>"class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i></a>
-                                <a href="/students/delete/<?= $student['id']; ?>"class="btn btn-light"><i class="fas fa-trash-alt text-danger" style="color: #ffffff;"></i></a>
+                                <a href="/students/delete/<?= $student['id']; ?>"class="btn btn-danger"><i class="fas fa-trash-alt text-danger" style="color: #ffffff;"></i></a>
                             </td>  
                         </tr>
                      <?php endforeach; ?>
