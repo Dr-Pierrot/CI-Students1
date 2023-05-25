@@ -12,6 +12,7 @@
   </head>
   <body>
     <h1>Hello, world!</h1>
+    
     <table  class="table mb-0">
         <thead>
             <th>ID</th>
@@ -35,13 +36,14 @@
                             <td><?= $student['year']; ?></td>
                             <td><?= $student['section']; ?></td>
                             <td>
-                                <a href="/students/edit/<?= $student['id']; ?>"class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i></a>
-                                <a href="/students/delete/<?= $student['id']; ?>"class="btn btn-danger"><i class="fas fa-trash-alt text-danger" style="color: #ffffff;"></i></a>
+                                <a href="/students/edit/<?= $student['id']; ?>" class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i></a>
+                                <a href="/students/delete/<?= $student['id']; ?>" class="btn btn-danger"><i class="fas fa-trash-alt text-danger" style="color: #ffffff;"></i></a>
                             </td>  
                         </tr>
                      <?php endforeach; ?>
         </tbody>
     </table>
+    
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
