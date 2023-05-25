@@ -35,6 +35,8 @@ $routes->get('/students/add', 'StudentsController::displayAdd');
 $routes->post('/students/post', 'StudentsController::postStudent');
 $routes->get('/students/edit/(:num)','StudentsController::displayEdit/$1');
 $routes->post('/students/put/(:num)','StudentsController::putStudent/$1');
+$routes->get('/students/delete/(:num)', 'StudentsController::deleteStudent/$1');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

@@ -47,5 +47,12 @@ class StudentsController extends BaseController
         return redirect()->to('/students')->with('up', 'Updated Successfully!');
 
     }
+    
+    public function deleteStudent($id){
+        $Student = new StudentsModel;
+        $Student->delete($id);
+        return redirect()->to('/students')->with('danger', 'Student Deleted!');
+    }
+
 
 }
