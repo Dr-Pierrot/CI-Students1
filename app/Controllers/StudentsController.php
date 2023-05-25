@@ -13,4 +13,15 @@ class StudentsController extends BaseController
         return view('students/table', $data);
     }
 
+    public function displayAdd(){
+        return view('students/add');
+    }
+
+    public function postStudent(){
+        $data = $this->request->getPost();
+        $students = new StudentsModel;
+        $student = $students->insert($data);
+        return redirect()->to('/students')->with('success', 'Added Successfully!');
+    }
+
 }

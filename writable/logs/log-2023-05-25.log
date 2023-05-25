@@ -169,3 +169,22 @@ in APPPATH\Views\students\table.php on line 29.
  8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\CI-Students\\public\\index.php')
+CRITICAL - 2023-05-25 11:21:00 --> Invalid file: "students/add.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('students/add.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('students/add', [], true)
+ 3 APPPATH\Controllers\StudentsController.php(17): view('students/add')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\StudentsController->displayAdd()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentsController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\CI-Students\\public\\index.php')
+CRITICAL - 2023-05-25 11:27:31 --> Class "App\Controllers\StudentModel" not found
+in APPPATH\Controllers\StudentsController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\StudentsController->postStudent()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentsController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\CI-Students\\public\\index.php')
+INFO - 2023-05-25 11:27:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 11:30:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
