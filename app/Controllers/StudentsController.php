@@ -21,7 +21,7 @@ class StudentsController extends BaseController
         $data = $this->request->getPost();
         $students = new StudentsModel;
         $student = $students->insert($data);
-        return redirect()->to('/students')->with('success', 'Added Successfully!');
+        return redirect()->to('/')->with('success', 'Added Successfully!');
     }
     public function displayEdit($id){
         $Student = new StudentsModel();
@@ -44,14 +44,14 @@ class StudentsController extends BaseController
 
         $Student->update($id, $data);
 
-        return redirect()->to('/students')->with('up', 'Updated Successfully!');
+        return redirect()->to('/')->with('up', 'Updated Successfully!');
 
     }
     
     public function deleteStudent($id){
         $Student = new StudentsModel;
         $Student->delete($id);
-        return redirect()->to('/students')->with('danger', 'Student Deleted!');
+        return redirect()->to('/')->with('danger', 'Student Deleted!');
     }
 
 
