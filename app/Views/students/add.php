@@ -52,7 +52,7 @@
         <input class="form-control" type="text" id="section" name="section" placeholder="Section" required>
       </div>
     </div>
-    <button class="btn btn-primary mb-3" type="submit">Submit form</button>
+    <button class="btn btn-primary mb-3" type="submit">Submit</button>
     </form>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.min.js" />
